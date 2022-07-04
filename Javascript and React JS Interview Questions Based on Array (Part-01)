@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;"/>
+<title>React Interview question based on Array</title>
+</head>
+<body>
+ <h1>React Interview Questions Based on Array (Part-01)</h1>
+ 
+<script type="text/javascript">
+//Q1
+var arr=[2,3,4,5,6,2,3,4,2,3];
+var count={};
+arr.forEach(function(x){
+  count[x]= (count[x]||0)+1;
+});
+console.log(count);
+//Q2
+
+function getmaxmin(array)
+{
+ var fmax= array[0];
+ var fmin= array[0];
+  for(var i=0; i<array.length; i++)
+  {
+     if(array[i] > fmax)
+     {
+      fmax= array[i];
+     }
+
+     if(array[i]< fmin)
+     {
+          fmin= array[i];
+
+     }
+
+  }
+console.log("Max Value"+fmax);
+console.log("Min Value"+fmin);
+}
+getmaxmin([23,45,67,99,102,11]);
+
+//Q3
+var salary=[3450,8750,9500,10000];
+salary.sort(function(a,b){
+     return b-a;
+
+});
+
+console.log(salary[1]);
+
+//Q4
+var array2=[2,3,4,2,3,6,7,1,8,5];
+var uni=[];
+for(var i=0; i<array2.length; i++)
+{
+     if(uni.indexOf(array2[i])===-1)
+     {
+      uni.push(array2[i]);
+     }
+
+}
+
+console.log(uni);
+
+
+</script>  
+
+</body>
+</html>
